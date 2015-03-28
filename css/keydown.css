@@ -122,6 +122,16 @@ body {
         background-image: url(//git-scm.com/book/en/v2/book/03-git-branching/images/head-to-testing.png); }
       .keydown.deck-container .slide.full-background.advance-testing {
         background-image: url(//git-scm.com/book/en/v2/book/03-git-branching/images/advance-testing.png); }
+      .keydown.deck-container .slide.full-background.basic-rebase-1 {
+        background-image: url(//git-scm.com/book/en/v2/book/03-git-branching/images/basic-rebase-1.png); }
+      .keydown.deck-container .slide.full-background.basic-rebase-2 {
+        background-image: url(//git-scm.com/book/en/v2/book/03-git-branching/images/basic-rebase-2.png); }
+      .keydown.deck-container .slide.full-background.basic-rebase-3 {
+        background-image: url(//git-scm.com/book/en/v2/book/03-git-branching/images/basic-rebase-3.png); }
+      .keydown.deck-container .slide.full-background.basic-rebase-4 {
+        background-image: url(//git-scm.com/book/en/v2/book/03-git-branching/images/basic-rebase-4.png); }
+      .keydown.deck-container .slide.full-background.lifecycle {
+        background-image: url(//git-scm.com/book/en/v2/book/02-git-basics/images/lifecycle.png); }
       .keydown.deck-container .slide.full-background h1 {
         display: inline;
         position: absolute;

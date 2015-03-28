@@ -16,3 +16,9 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.deck-container .slide .CodeMirror pre {
+    font-family: Consolas, monospace;
+    font-size: 32px;
+    line-height: 100%;
+}

@@ -118,7 +118,7 @@
     <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h3>GitExtensions</h3>
+        <h3>Git Extensions</h3>
         
         <p><img src="https://git-extensions-documentation.readthedocs.org/en/latest/_images/commit_diff_view.png" width="647" height="400"></p>
       </div>
@@ -127,7 +127,7 @@
     <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h1>Git Basic</h1>
+        <h1>Git Basics</h1>
         
         <p><img src="//upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" width="110" height="46" alt="Git"></p>
       </div>
@@ -171,25 +171,96 @@
     <section class='branch-and-history full-background slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        
+        <ul>
+        <li><a href="#slide-15">Branch?</a></li>
+        </ul>
       </div>
       <div class='spacer bottom'></div>
     </section>
     <section class='full-background head-to-master slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        
+        <p><textarea class='code' display='none' mode='bash'>$ git branch testing</textarea>
+    </p>
       </div>
       <div class='spacer bottom'></div>
     </section>
     <section class='full-background head-to-testing slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        
+        <p><textarea class='code' display='none' mode='bash'>$ git checkout testing&#x000A;# git checkout -b testing&#x000A;# git checkout -b testing master</textarea>
+    </p>
       </div>
       <div class='spacer bottom'></div>
     </section>
     <section class='advance-testing full-background slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p><textarea class='code' display='none' mode='bash'>$ git commit</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='basic-rebase-1 full-background slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='basic-rebase-2 full-background slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p><textarea class='code' display='none' mode='bash'># Head poings to master&#x000A;$ git merge experiment</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='basic-rebase-3 full-background slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p><textarea class='code' display='none' mode='bash'># Head points to experiment&#x000A;$ git rebase master</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='basic-rebase-4 full-background slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p><textarea class='code' display='none' mode='bash'># Head points to master&#x000A;$ git merge master&#x000A;$ git branch -d experiment</textarea>
+    </p>
+        
+        <p><a href="#slide-37">Branch!</a></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Git Command Line - Basic</h1>
+        
+        <p><img src="//upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" width="110" height="46" alt="Git"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Up and Running</h2>
+        
+        <p><textarea class='code' display='none' mode='bash'>$ git clone {remote-url}&#x000A;# Time goes and goes&#x000A;$ git pull</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Daily Operations</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='full-background lifecycle slide'>
       <div class='spacer top'></div>
       <div class='content'>
         
@@ -199,9 +270,337 @@
     <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h1>Git Command Line</h1>
+        <h2>Daily Commands</h2>
+        
+        <p><textarea class='code' display='none' mode='bash'>$ git status&#x000A;$ git add .&#x000A;$ git add --all&#x000A;$ git reset&#x000A;$ git commit&#x000A;$ git commit -a&#x000A;$ git commit -am'{Commit message}'&#x000A;$ git push -u {remote} {remote-branch}&#x000A;$ git push&#x000A;$ git pull</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Handy Commands</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Git Help</h3>
+        
+        <p><textarea class='code' display='none' mode='bash'>$ git {verb} -h&#x000A;$ git {verb} --help&#x000A;$ git help {verb}</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Git Log</h3>
+        
+        <p><textarea class='code' display='none' mode='bash'>$ git log&#x000A;$ git log --author 'Arrow Rowe' -StqChart -p&#x000A;        --format="%h %Cgreen%ad%Creset %s"&#x000A;$ git log --graph --oneline</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Git Config</h3>
+        
+        <p><textarea class='code' display='none' mode='bash'>$ git config -e&#x000A;$ git config -e --global</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Git Diff</h3>
+        
+        <p><textarea class='code' display='none' mode='bash'>$ git diff&#x000A;$ git diff head&#x000A;$ git diff head~&#x000A;$ git diff {from} {to}&#x000A;$ git diff head^3 head~&#x000A;$ git diff {file}&#x000A;$ git diff {from} {file}&#x000A;$ git diff {from} {to} {file}</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Checkout into History</h3>
+        
+        <p><textarea class='code' display='none' mode='bash'>$ git checkout {wherever-you-want}&#x000A;$ git checkout head~~~&#x000A;$ git checkout {where} {file}       # Danger!&#x000A;$ git checkout {file}               # Danger!</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Ignore</h3>
+        
+        <p><textarea class='code' display='none' mode='gitignore'># PhpStorm&#x000A;.idea/&#x000A;&#x000A;# Python&#x000A;*.py[cod]&#x000A;&#x000A;# Composer&#x000A;vendor/&#x000A;&#x000A;# NPM&#x000A;node_modules/</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Something more...</h3>
+        
+        <p><textarea class='code' display='none' mode='bash'>$ git commit --amend&#x000A;$ git push -f&#x000A;$ git branch -f {branch} {where}</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Branching</h1>
         
         <p><img src="//upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" width="110" height="46" alt="Git"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <ul>
+        <li><a href="#slide-15">Branch?</a></li>
+        <li><a href="#slide-37">Branch!</a></li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p><textarea class='code' display='none' mode='bash'>$ git branch&#x000A;$ git branch -r&#x000A;$ git branch -a&#x000A;$ git branch -v&#x000A;$ git branch -vv</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Teamwork</h1>
+        
+        <p><img src="//upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" width="110" height="46" alt="Git"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>What if ...?</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>... my push gets rejected?</h3>
+        
+        <ul>
+        <li>Change something, commit, push...</li>
+        <li>Run into <code>! [rejected]</code>!</li>
+        <li>Hint: The remote contains work that you do not have locally.</li>
+        <li>Hint: See the 'Note about fast-forwards' in 'git push --help' for details.</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p><textarea class='code' display='none' mode='bash'>$ git pull --rebase</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>... my pull is aborted?</h3>
+        
+        <ul>
+        <li>Change something, have not committed, pull...</li>
+        <li>Run into <code>error: Your local changes to the following files would be overwritten by merge:</code>!</li>
+        <li>Hint: Commit or stash.</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <p><textarea class='code' display='none' mode='bash'>$ git stash&#x000A;$ git pull&#x000A;$ git stash pop&#x000A;# Deal with confliction...</textarea>
+    </p>
+        
+        <p><textarea class='code' display='none' mode='bash'>$ git stash list&#x000A;$ git stash show&#x000A;$ git stash drop</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>... confliction occurs?</h3>
+        
+        <p>Just follow the hint...</p>
+        
+        <p>from</p>
+        
+        <p><textarea class='code' display='none' mode='js'><<<<<<< Updated upstream&#x000A;// Someone else has done this!&#x000A;=======&#x000A;// My work not committed&#x000A;>>>>>>> Stashed changes</textarea>
+    </p>
+        
+        <p>to</p>
+        
+        <p><textarea class='code' display='none' mode='js'>// My work not committed is left!</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>... write something on a wrong branch?</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <ul>
+        <li>Have not committed yet?</li>
+        </ul>
+        
+        
+        <p><textarea class='code' display='none' mode='bash'>$ git stash&#x000A;$ git checkout {the-correct-branch}&#x000A;$ git stash pop&#x000A;# everything OK now...</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <ul>
+        <li>Already committed?</li>
+        </ul>
+        
+        
+        <p><textarea class='code' display='none' mode='bash'>$ git reset head~   # or wherever you want</textarea>
+    </p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Workflow</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Naming branches</h3>
+        
+        <ul>
+        <li>dev or master, test, production or deploy</li>
+        <li>enhance/aaa, feature/bbb, refactor/ccc</li>
+        <li>hotfix/xxx</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Working on a branch</h3>
+        
+        <ol>
+        <li>Branch aside from master.</li>
+        <li>Rebase from time to time. Stay close with Master!</li>
+        <li>Send PR: Pull Request.</li>
+        </ol>
+        
+        
+        <hr />
+        
+        <ul>
+        <li>Commits and branches, the smaller the better</li>
+        <li>Clear commit messages and PR messages</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>Issues and Milestones</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h3>A Forker Forks a Fork</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Webhooks and More</h1>
+        
+        <p><img src="//upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" width="110" height="46" alt="Git"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Webhooks and Services</h2>
+        
+        <ul>
+        <li>dyGroup of hackShanghai</li>
+        <li>Slack</li>
+        <li>BearyChat, TeamBition, ...</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Quality Assurance</h2>
+        
+        <ul>
+        <li>Unit Tests: PHPUnit, CI, ...</li>
+        <li>Spell check, syntax check, ...</li>
+        </ul>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Anything missing?</h1>
+        
+        <p><img src="//upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" width="110" height="46" alt="Git"></p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <ul>
+        <li>Ignore crlf, filemode, ...</li>
+        <li>Regard something as text or binary: Git Attributes</li>
+        <li>Git Help, Pro Git, and Google</li>
+        </ul>
       </div>
       <div class='spacer bottom'></div>
     </section>
