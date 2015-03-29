@@ -6,7 +6,7 @@
 
 ## dyTopic
 
-2015.03.29 19:00 | Rotunda, SJTU MH
+2015.03.29 19:30 | Rotunda, SJTU MH
 
 !SLIDE
 
@@ -481,4 +481,4 @@ $ git reset head~   # or wherever you want
 
 <img src="images/center.png">
 
-2015.03.29 19:00 | Rotunda, SJTU MH
+2015.03.29 19:30 | Rotunda, SJTU MH
